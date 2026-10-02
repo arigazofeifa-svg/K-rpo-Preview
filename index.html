@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Kórpo — Wellness corporativo para equipos que quieran rendir mejor</title>
+<meta name="description" content="En KÓRPO diseñamos soluciones de bienestar corporativo que ayudan a las empresas a mejorar la energía, el equilibrio y el desempeño de sus equipos.">
+<meta name="theme-color" content="#101020">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%2246%2092%2086%20116%22%3E%3Cpath%20fill%3D%22%2300d47e%22%20d%3D%22M%20110.66%20120.92%20C%20110.66%20132.80%20101.03%20142.43%2089.15%20142.43%20C%2077.27%20142.43%2067.64%20132.80%2067.64%20120.92%20C%2067.64%20109.05%2077.27%2099.42%2089.15%2099.42%20C%20101.03%2099.42%20110.66%20109.05%20110.66%20120.92%22/%3E%3Cpath%20fill%3D%22%23fc6e53%22%20d%3D%22M%20113.21%20143.28%20L%2065.09%20143.28%20C%2058.61%20143.28%2053.35%20148.54%2053.35%20155.02%20C%2053.35%20161.51%2058.61%20166.76%2065.09%20166.76%20L%20113.21%20166.76%20C%20119.69%20166.76%20124.94%20161.51%20124.94%20155.02%20C%20124.94%20148.54%20119.69%20143.28%20113.21%20143.28%22/%3E%3Cpath%20fill%3D%22%231a1a33%22%20d%3D%22M%20122.45%20202.24%20C%20122.45%20183.85%20107.54%20168.94%2089.15%20168.94%20C%2070.76%20168.94%2055.85%20183.85%2055.85%20202.24%20Z%20M%20122.45%20202.24%22/%3E%3C/svg%3E">
+
+<!-- Tipografías originales de Kórpo (Fontshare): Cabinet Grotesk (títulos) + General Sans (texto) -->
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=cabinet-grotesk@500,700,800&display=swap">
+
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="stylesheet" href="style.css">
+
+<!-- Marca de JS lo antes posible: el CSS solo oculta/anima contenido cuando
+     esta clase existe, así el sitio sigue siendo legible si el JS falla. -->
+<script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+
+<!-- =====================================================================
+     PROPUESTA DE SCROLL — KÓRPO
+     ---------------------------------------------------------------------
+     CÓMO REEMPLAZAR LAS FOTOGRAFÍAS
+     Todas las fotos son TEMPORALES (Unsplash). Cada <img> lleva un
+     atributo data-foto con un nombre sugerido. Para usar la foto
+     definitiva basta con cambiar el src, por ejemplo:
+       src="https://images.unsplash.com/..."  →  src="../images/hero.jpg"
+     Si una imagen no carga, la página muestra automáticamente un
+     placeholder de marca con el nombre de la foto (data-foto), nunca un
+     hueco roto.
+
+     Fotos usadas (data-foto → tema):
+       hero                 → equipo de trabajo / bienestar en empresa
+       conoce-nutricion     → nutrición
+       conoce-equipo        → equipos de trabajo
+       conoce-movimiento    → movimiento / pausa activa
+       servicio-01 … 05     → una por servicio
+       experiencia-01 … 04  → reemplazan images/gallery-01..04.jpg
+       coach-01 … 03        → reemplazan images/coach-01..03.jpg
+       contacto             → fondo del bloque de contacto
+
+     Los textos entre [corchetes] son PLACEHOLDERS: información que Kórpo
+     todavía no ha entregado. Se muestran con un estilo punteado para que
+     sean fáciles de identificar.
+     ===================================================================== -->
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="k-icon" viewBox="52 98 74 106"><path fill="#00d47e" d="M 110.66 120.92 C 110.66 132.80 101.03 142.43 89.15 142.43 C 77.27 142.43 67.64 132.80 67.64 120.92 C 67.64 109.05 77.27 99.42 89.15 99.42 C 101.03 99.42 110.66 109.05 110.66 120.92"/><path fill="#fc6e53" d="M 113.21 143.28 L 65.09 143.28 C 58.61 143.28 53.35 148.54 53.35 155.02 C 53.35 161.51 58.61 166.76 65.09 166.76 L 113.21 166.76 C 119.69 166.76 124.94 161.51 124.94 155.02 C 124.94 148.54 119.69 143.28 113.21 143.28"/><path style="fill:var(--k-dome,currentColor)" d="M 122.45 202.24 C 122.45 183.85 107.54 168.94 89.15 168.94 C 70.76 168.94 55.85 183.85 55.85 202.24 Z M 122.45 202.24"/></symbol>
+    <symbol id="k-word" viewBox="154 84 438 150"><g fill="currentColor"><path d="M 195.89 153.26 L 220.85 125.82 C 221.84 124.72 222.34 123.34 222.34 121.68 C 222.34 120.03 221.76 118.66 220.60 117.55 C 219.45 116.45 218.15 115.90 216.72 115.90 C 214.96 115.90 213.41 116.51 212.09 117.72 L 167.63 166.81 L 167.63 92.10 C 167.63 90.44 167.07 89.04 165.97 87.88 C 164.87 86.72 163.49 86.14 161.84 86.14 C 160.19 86.14 158.78 86.72 157.62 87.88 C 156.47 89.04 155.89 90.44 155.89 92.10 L 155.89 196.07 C 155.89 197.72 156.47 199.13 157.62 200.28 C 158.78 201.44 160.19 202.02 161.84 202.02 C 163.49 202.02 164.87 201.44 165.97 200.28 C 167.07 199.13 167.63 197.72 167.63 196.07 L 167.63 184.17 L 187.46 161.85 L 214.07 199.37 C 215.17 201.14 216.83 202.02 219.03 202.02 C 219.92 202.02 221.02 201.69 222.34 201.03 C 223.66 200.15 224.46 198.91 224.74 197.31 C 225.01 195.71 224.71 194.20 223.83 192.76 Z M 195.89 153.26"/><path d="M 297.14 181.03 C 291.02 187.09 283.64 190.12 274.99 190.12 C 266.33 190.12 258.98 187.09 252.92 181.03 C 246.86 174.97 243.83 167.58 243.83 158.88 C 243.83 150.17 246.86 142.76 252.92 136.64 C 258.98 130.53 266.33 127.47 274.99 127.47 C 283.64 127.47 291.02 130.53 297.14 136.64 C 303.25 142.76 306.31 150.17 306.31 158.88 C 306.31 167.58 303.25 174.97 297.14 181.03 M 283.76 116.73 L 299.38 107.64 C 301.08 107.12 302.23 105.97 302.82 104.19 C 303.42 102.42 303.32 100.68 302.53 98.98 C 301.35 96.88 299.64 95.83 297.41 95.83 C 295.70 95.83 294.12 96.35 292.68 97.40 L 268.11 116.41 C 259.17 117.74 251.32 121.76 244.57 128.46 C 236.14 136.84 231.92 147.00 231.92 158.96 C 231.92 170.92 236.14 181.08 244.57 189.46 C 253.00 197.83 263.14 202.02 274.99 202.02 C 286.83 202.02 296.97 197.83 305.40 189.46 C 313.83 181.08 318.05 170.92 318.05 158.96 C 318.05 147.00 313.83 136.84 305.40 128.46 C 299.13 122.23 291.91 118.32 283.76 116.73"/><path d="M 370.78 115.90 C 360.42 115.90 351.55 119.53 344.16 126.81 C 336.78 134.08 333.09 142.90 333.09 153.26 L 333.09 196.40 C 333.09 198.05 333.67 199.46 334.82 200.62 C 335.98 201.77 337.39 202.35 339.04 202.35 C 340.69 202.35 342.10 201.77 343.25 200.62 C 344.41 199.46 344.99 198.05 344.99 196.40 L 344.99 153.26 C 344.99 146.32 347.5 140.31 352.51 135.24 C 357.53 130.17 363.61 127.64 370.78 127.64 C 372.32 127.64 373.67 127.08 374.83 125.98 C 375.98 124.88 376.56 123.50 376.56 121.85 C 376.56 120.19 375.98 118.79 374.83 117.64 C 373.67 116.48 372.32 115.90 370.78 115.90"/><path d="M 445.41 181.03 C 439.29 187.09 431.88 190.12 423.17 190.12 C 414.58 190.12 407.23 187.09 401.11 181.03 C 394.99 174.97 391.93 167.61 391.93 158.96 C 391.93 150.31 394.99 142.90 401.11 136.73 C 407.23 130.56 414.58 127.47 423.17 127.47 C 431.88 127.47 439.29 130.56 445.41 136.73 C 451.52 142.90 454.58 150.31 454.58 158.96 C 454.58 167.61 451.52 174.97 445.41 181.03 M 423.17 115.90 C 411.38 115.90 401.27 120.09 392.84 128.46 C 384.41 136.84 380.19 146.98 380.19 158.88 L 380.19 225.66 C 380.19 227.31 380.77 228.72 381.93 229.87 C 383.09 231.03 384.46 231.61 386.06 231.61 C 387.66 231.61 389.04 231.03 390.20 229.87 C 391.35 228.72 391.93 227.31 391.93 225.66 L 391.93 185.32 C 395.13 190.40 399.48 194.44 404.99 197.48 C 410.50 200.51 416.56 202.02 423.17 202.02 C 435.08 202.02 445.24 197.83 453.67 189.46 C 462.10 181.08 466.32 170.92 466.32 158.96 C 466.32 147.00 462.10 136.84 453.67 128.46 C 445.24 120.09 435.08 115.90 423.17 115.90"/><path d="M 543.92 181.03 C 537.81 187.09 530.42 190.12 521.77 190.12 C 513.12 190.12 505.76 187.09 499.71 181.03 C 493.64 174.97 490.61 167.58 490.61 158.88 C 490.61 150.17 493.64 142.76 499.71 136.64 C 505.76 130.53 513.12 127.47 521.77 127.47 C 530.42 127.47 537.81 130.53 543.92 136.64 C 550.04 142.76 553.10 150.17 553.10 158.88 C 553.10 167.58 550.04 174.97 543.92 181.03 M 552.19 128.46 C 543.76 120.09 533.62 115.90 521.77 115.90 C 509.93 115.90 499.79 120.09 491.36 128.46 C 482.93 136.84 478.71 147.00 478.71 158.96 C 478.71 170.92 482.93 181.08 491.36 189.46 C 499.79 197.83 509.93 202.02 521.77 202.02 C 533.62 202.02 543.76 197.83 552.19 189.46 C 560.62 181.08 564.83 170.92 564.83 158.96 C 564.83 147.00 560.62 136.84 552.19 128.46"/><path d="M 580.63 188.38 L 577.85 188.38 L 577.85 192.33 L 580.63 192.33 C 581.15 192.33 581.61 192.14 582.01 191.76 C 582.42 191.38 582.62 190.92 582.62 190.37 C 582.62 189.83 582.42 189.37 582.01 188.97 C 581.61 188.58 581.15 188.38 580.63 188.38 M 577.08 186.99 L 580.63 186.99 C 581.55 186.99 582.34 187.32 583 187.97 C 583.65 188.63 583.98 189.42 583.98 190.37 C 583.98 190.98 583.82 191.55 583.50 192.07 C 583.19 192.58 582.75 192.98 582.18 193.25 L 583.88 196.19 C 583.99 196.37 584.02 196.55 583.98 196.72 C 583.93 196.89 583.83 197.02 583.67 197.11 C 583.58 197.20 583.48 197.24 583.37 197.24 C 583.07 197.24 582.85 197.12 582.69 196.87 L 580.87 193.69 C 580.80 193.71 580.63 193.72 580.36 193.72 L 577.85 193.72 L 577.85 196.53 C 577.85 196.71 577.78 196.86 577.62 196.99 C 577.46 197.11 577.28 197.17 577.08 197.17 C 576.89 197.17 576.74 197.11 576.62 196.99 C 576.5 196.86 576.43 196.71 576.43 196.53 L 576.43 187.70 C 576.43 187.50 576.5 187.33 576.62 187.19 C 576.74 187.06 576.89 186.99 577.08 186.99 M 587.83 192.13 C 587.83 190.03 587.08 188.24 585.58 186.74 C 584.08 185.24 582.29 184.49 580.19 184.49 C 578.11 184.49 576.33 185.24 574.84 186.74 C 573.35 188.24 572.61 190.03 572.61 192.13 C 572.61 194.21 573.35 195.98 574.84 197.46 C 576.33 198.94 578.11 199.68 580.19 199.68 C 582.29 199.68 584.08 198.94 585.58 197.46 C 587.08 195.98 587.83 194.21 587.83 192.13 M 571.22 192.13 C 571.22 189.63 572.10 187.50 573.84 185.74 C 575.59 183.98 577.71 183.10 580.19 183.10 C 582.67 183.10 584.80 183.98 586.58 185.76 C 588.37 187.53 589.26 189.65 589.26 192.13 C 589.26 194.62 588.37 196.73 586.60 198.5 C 584.83 200.25 582.69 201.13 580.19 201.13 C 577.71 201.13 575.59 200.26 573.84 198.51 C 572.10 196.76 571.22 194.64 571.22 192.13"/></g></symbol>
+    <symbol id="k-logo" viewBox="52 84 540 150"><path fill="#00d47e" d="M 110.66 120.92 C 110.66 132.80 101.03 142.43 89.15 142.43 C 77.27 142.43 67.64 132.80 67.64 120.92 C 67.64 109.05 77.27 99.42 89.15 99.42 C 101.03 99.42 110.66 109.05 110.66 120.92"/><path fill="#fc6e53" d="M 113.21 143.28 L 65.09 143.28 C 58.61 143.28 53.35 148.54 53.35 155.02 C 53.35 161.51 58.61 166.76 65.09 166.76 L 113.21 166.76 C 119.69 166.76 124.94 161.51 124.94 155.02 C 124.94 148.54 119.69 143.28 113.21 143.28"/><path style="fill:var(--k-dome,currentColor)" d="M 122.45 202.24 C 122.45 183.85 107.54 168.94 89.15 168.94 C 70.76 168.94 55.85 183.85 55.85 202.24 Z M 122.45 202.24"/><g fill="currentColor"><path d="M 195.89 153.26 L 220.85 125.82 C 221.84 124.72 222.34 123.34 222.34 121.68 C 222.34 120.03 221.76 118.66 220.60 117.55 C 219.45 116.45 218.15 115.90 216.72 115.90 C 214.96 115.90 213.41 116.51 212.09 117.72 L 167.63 166.81 L 167.63 92.10 C 167.63 90.44 167.07 89.04 165.97 87.88 C 164.87 86.72 163.49 86.14 161.84 86.14 C 160.19 86.14 158.78 86.72 157.62 87.88 C 156.47 89.04 155.89 90.44 155.89 92.10 L 155.89 196.07 C 155.89 197.72 156.47 199.13 157.62 200.28 C 158.78 201.44 160.19 202.02 161.84 202.02 C 163.49 202.02 164.87 201.44 165.97 200.28 C 167.07 199.13 167.63 197.72 167.63 196.07 L 167.63 184.17 L 187.46 161.85 L 214.07 199.37 C 215.17 201.14 216.83 202.02 219.03 202.02 C 219.92 202.02 221.02 201.69 222.34 201.03 C 223.66 200.15 224.46 198.91 224.74 197.31 C 225.01 195.71 224.71 194.20 223.83 192.76 Z M 195.89 153.26"/><path d="M 297.14 181.03 C 291.02 187.09 283.64 190.12 274.99 190.12 C 266.33 190.12 258.98 187.09 252.92 181.03 C 246.86 174.97 243.83 167.58 243.83 158.88 C 243.83 150.17 246.86 142.76 252.92 136.64 C 258.98 130.53 266.33 127.47 274.99 127.47 C 283.64 127.47 291.02 130.53 297.14 136.64 C 303.25 142.76 306.31 150.17 306.31 158.88 C 306.31 167.58 303.25 174.97 297.14 181.03 M 283.76 116.73 L 299.38 107.64 C 301.08 107.12 302.23 105.97 302.82 104.19 C 303.42 102.42 303.32 100.68 302.53 98.98 C 301.35 96.88 299.64 95.83 297.41 95.83 C 295.70 95.83 294.12 96.35 292.68 97.40 L 268.11 116.41 C 259.17 117.74 251.32 121.76 244.57 128.46 C 236.14 136.84 231.92 147.00 231.92 158.96 C 231.92 170.92 236.14 181.08 244.57 189.46 C 253.00 197.83 263.14 202.02 274.99 202.02 C 286.83 202.02 296.97 197.83 305.40 189.46 C 313.83 181.08 318.05 170.92 318.05 158.96 C 318.05 147.00 313.83 136.84 305.40 128.46 C 299.13 122.23 291.91 118.32 283.76 116.73"/><path d="M 370.78 115.90 C 360.42 115.90 351.55 119.53 344.16 126.81 C 336.78 134.08 333.09 142.90 333.09 153.26 L 333.09 196.40 C 333.09 198.05 333.67 199.46 334.82 200.62 C 335.98 201.77 337.39 202.35 339.04 202.35 C 340.69 202.35 342.10 201.77 343.25 200.62 C 344.41 199.46 344.99 198.05 344.99 196.40 L 344.99 153.26 C 344.99 146.32 347.5 140.31 352.51 135.24 C 357.53 130.17 363.61 127.64 370.78 127.64 C 372.32 127.64 373.67 127.08 374.83 125.98 C 375.98 124.88 376.56 123.50 376.56 121.85 C 376.56 120.19 375.98 118.79 374.83 117.64 C 373.67 116.48 372.32 115.90 370.78 115.90"/><path d="M 445.41 181.03 C 439.29 187.09 431.88 190.12 423.17 190.12 C 414.58 190.12 407.23 187.09 401.11 181.03 C 394.99 174.97 391.93 167.61 391.93 158.96 C 391.93 150.31 394.99 142.90 401.11 136.73 C 407.23 130.56 414.58 127.47 423.17 127.47 C 431.88 127.47 439.29 130.56 445.41 136.73 C 451.52 142.90 454.58 150.31 454.58 158.96 C 454.58 167.61 451.52 174.97 445.41 181.03 M 423.17 115.90 C 411.38 115.90 401.27 120.09 392.84 128.46 C 384.41 136.84 380.19 146.98 380.19 158.88 L 380.19 225.66 C 380.19 227.31 380.77 228.72 381.93 229.87 C 383.09 231.03 384.46 231.61 386.06 231.61 C 387.66 231.61 389.04 231.03 390.20 229.87 C 391.35 228.72 391.93 227.31 391.93 225.66 L 391.93 185.32 C 395.13 190.40 399.48 194.44 404.99 197.48 C 410.50 200.51 416.56 202.02 423.17 202.02 C 435.08 202.02 445.24 197.83 453.67 189.46 C 462.10 181.08 466.32 170.92 466.32 158.96 C 466.32 147.00 462.10 136.84 453.67 128.46 C 445.24 120.09 435.08 115.90 423.17 115.90"/><path d="M 543.92 181.03 C 537.81 187.09 530.42 190.12 521.77 190.12 C 513.12 190.12 505.76 187.09 499.71 181.03 C 493.64 174.97 490.61 167.58 490.61 158.88 C 490.61 150.17 493.64 142.76 499.71 136.64 C 505.76 130.53 513.12 127.47 521.77 127.47 C 530.42 127.47 537.81 130.53 543.92 136.64 C 550.04 142.76 553.10 150.17 553.10 158.88 C 553.10 167.58 550.04 174.97 543.92 181.03 M 552.19 128.46 C 543.76 120.09 533.62 115.90 521.77 115.90 C 509.93 115.90 499.79 120.09 491.36 128.46 C 482.93 136.84 478.71 147.00 478.71 158.96 C 478.71 170.92 482.93 181.08 491.36 189.46 C 499.79 197.83 509.93 202.02 521.77 202.02 C 533.62 202.02 543.76 197.83 552.19 189.46 C 560.62 181.08 564.83 170.92 564.83 158.96 C 564.83 147.00 560.62 136.84 552.19 128.46"/><path d="M 580.63 188.38 L 577.85 188.38 L 577.85 192.33 L 580.63 192.33 C 581.15 192.33 581.61 192.14 582.01 191.76 C 582.42 191.38 582.62 190.92 582.62 190.37 C 582.62 189.83 582.42 189.37 582.01 188.97 C 581.61 188.58 581.15 188.38 580.63 188.38 M 577.08 186.99 L 580.63 186.99 C 581.55 186.99 582.34 187.32 583 187.97 C 583.65 188.63 583.98 189.42 583.98 190.37 C 583.98 190.98 583.82 191.55 583.50 192.07 C 583.19 192.58 582.75 192.98 582.18 193.25 L 583.88 196.19 C 583.99 196.37 584.02 196.55 583.98 196.72 C 583.93 196.89 583.83 197.02 583.67 197.11 C 583.58 197.20 583.48 197.24 583.37 197.24 C 583.07 197.24 582.85 197.12 582.69 196.87 L 580.87 193.69 C 580.80 193.71 580.63 193.72 580.36 193.72 L 577.85 193.72 L 577.85 196.53 C 577.85 196.71 577.78 196.86 577.62 196.99 C 577.46 197.11 577.28 197.17 577.08 197.17 C 576.89 197.17 576.74 197.11 576.62 196.99 C 576.5 196.86 576.43 196.71 576.43 196.53 L 576.43 187.70 C 576.43 187.50 576.5 187.33 576.62 187.19 C 576.74 187.06 576.89 186.99 577.08 186.99 M 587.83 192.13 C 587.83 190.03 587.08 188.24 585.58 186.74 C 584.08 185.24 582.29 184.49 580.19 184.49 C 578.11 184.49 576.33 185.24 574.84 186.74 C 573.35 188.24 572.61 190.03 572.61 192.13 C 572.61 194.21 573.35 195.98 574.84 197.46 C 576.33 198.94 578.11 199.68 580.19 199.68 C 582.29 199.68 584.08 198.94 585.58 197.46 C 587.08 195.98 587.83 194.21 587.83 192.13 M 571.22 192.13 C 571.22 189.63 572.10 187.50 573.84 185.74 C 575.59 183.98 577.71 183.10 580.19 183.10 C 582.67 183.10 584.80 183.98 586.58 185.76 C 588.37 187.53 589.26 189.65 589.26 192.13 C 589.26 194.62 588.37 196.73 586.60 198.5 C 584.83 200.25 582.69 201.13 580.19 201.13 C 577.71 201.13 575.59 200.26 573.84 198.51 C 572.10 196.76 571.22 194.64 571.22 192.13"/></g></symbol>
+  </defs>
+</svg>
+
+<!-- =========================== INTRO =========================== -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__brand">
+    <svg class="loader__icon" viewBox="52 92 74 112"><path class="ld-dot" fill="#00d47e" d="M 110.66 120.92 C 110.66 132.80 101.03 142.43 89.15 142.43 C 77.27 142.43 67.64 132.80 67.64 120.92 C 67.64 109.05 77.27 99.42 89.15 99.42 C 101.03 99.42 110.66 109.05 110.66 120.92"/><path class="ld-pill" fill="#fc6e53" d="M 113.21 143.28 L 65.09 143.28 C 58.61 143.28 53.35 148.54 53.35 155.02 C 53.35 161.51 58.61 166.76 65.09 166.76 L 113.21 166.76 C 119.69 166.76 124.94 161.51 124.94 155.02 C 124.94 148.54 119.69 143.28 113.21 143.28"/><path class="ld-dome" d="M 122.45 202.24 C 122.45 183.85 107.54 168.94 89.15 168.94 C 70.76 168.94 55.85 183.85 55.85 202.24 Z M 122.45 202.24"/></svg>
+    <span class="loader__word"><svg viewBox="0 0 438 150"><use href="#k-word"/></svg></span>
+  </div>
+</div>
+
+<!-- Barra de progreso de lectura -->
+<div class="progress" aria-hidden="true"><span class="progress__bar" id="progressBar"></span></div>
+
+<!-- =========================== NAVEGACIÓN =========================== -->
+<header class="nav" id="nav" data-nav-theme="dark">
+  <a class="nav__brand" href="#inicio" aria-label="Kórpo — inicio">
+    <svg class="nav__logo" viewBox="0 0 540 150" aria-hidden="true"><use href="#k-logo"/></svg>
+  </a>
+
+  <nav class="nav__links" aria-label="Secciones">
+    <a href="#conoce">Kórpo</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#experiencias">Experiencias</a>
+    <a href="#planes">Planes</a>
+    <a href="#equipo">Equipo</a>
+  </nav>
+
+  <div class="nav__actions">
+    <a class="btn-roll btn-roll--nav" href="#contacto">
+      <span class="btn-roll__text">Contáctanos</span>
+      <span class="btn-roll__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
+    </a>
+    <button class="nav__toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Menú a pantalla completa (tablet y celular) -->
+<div class="menu" id="menu" inert>
+  <div class="menu__shapes" aria-hidden="true">
+    <span class="shape shape--dot"></span><span class="shape shape--pill"></span><span class="shape shape--dome"></span>
+  </div>
+  <nav class="menu__links" aria-label="Menú principal">
+    <a href="#conoce"><span>01</span>Conoce Kórpo</a>
+    <a href="#servicios"><span>02</span>Servicios</a>
+    <a href="#experiencias"><span>03</span>Experiencias</a>
+    <a href="#planes"><span>04</span>Planes</a>
+    <a href="#equipo"><span>05</span>Equipo</a>
+    <a href="#contacto"><span>06</span>Contacto</a>
+  </nav>
+  <p class="menu__foot">Wellness corporativo para equipos que quieran rendir mejor.</p>
+</div>
+
+<main id="top">
+
+  <!-- =====================================================================
+       1 · HERO — la foto empieza como tarjeta redondeada, se expande a
+       pantalla completa y después el texto de Kórpo aparece palabra por
+       palabra. Todo sucede dentro de un escenario "sticky".
+       ===================================================================== -->
+  <section class="hero" id="inicio" data-theme="dark" aria-label="Inicio">
+    <div class="hero__stage">
+
+      <div class="hero__intro">
+        <p class="eyebrow eyebrow--light" data-hero-fade>Bienestar corporativo</p>
+        <h1 class="hero__title" data-hero-title>
+          <span class="line"><span class="line__in">Wellness corporativo</span></span>
+          <span class="line"><span class="line__in">para equipos que quieran</span></span>
+          <span class="line"><span class="line__in"><em>rendir mejor.</em></span></span>
+        </h1>
+        <div class="hero__cta" data-hero-fade>
+          <a class="btn-roll btn-roll--green" href="#conoce">
+            <span class="btn-roll__text">Conoce Kórpo</span>
+            <span class="btn-roll__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__media" id="heroMedia">
+        <div class="media media--hero">
+          <!-- FOTO TEMPORAL — reemplazar -->
+          <img data-foto="hero" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=2000&q=75" alt="Equipo de trabajo compartiendo un momento de bienestar" fetchpriority="high">
+        </div>
+        <div class="hero__shade" id="heroShade"></div>
+      </div>
+
+      <!-- Texto de Kórpo: aparece progresivamente sobre la foto -->
+      <div class="hero__statement" id="heroStatement">
+        <p class="hero__statement-eyebrow eyebrow eyebrow--light">Kórpo</p>
+        <p class="statement" data-words>
+          En KÓRPO diseñamos soluciones de bienestar corporativo que ayudan a las empresas a mejorar
+          la <mark class="hl hl--green">energía</mark>, el <mark class="hl hl--coral">equilibrio</mark>
+          y el <mark class="hl hl--yellow">desempeño</mark> de sus equipos.
+        </p>
+      </div>
+
+      <div class="scroll-cue" data-hero-fade aria-hidden="true">
+        <span class="scroll-cue__line"></span>
+        <span>Desliza</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       2 · CONOCE KÓRPO — energía · equilibrio · desempeño
+       Las tres palabras vienen del texto de Kórpo; cada una se acompaña
+       con una de las tres formas del logo (círculo, píldora, cúpula).
+       ===================================================================== -->
+  <section class="about sheet sheet--cream" id="conoce" data-theme="light" aria-labelledby="conoceTitle">
+    <div class="wrap">
+      <div class="section-head section-head--center">
+        <p class="eyebrow" data-slide="left">Sobre Kórpo</p>
+        <h2 class="section-title" id="conoceTitle" data-split data-slide="right">Conoce Kórpo</h2>
+      </div>
+    </div>
+
+    <div class="kinetic" aria-label="Energía, equilibrio y desempeño">
+      <div class="kinetic__row" data-drift="-1">
+        <span class="kinetic__shape shape shape--dot" aria-hidden="true"></span>
+        <span class="kinetic__word">Energía</span>
+        <span class="kinetic__pic media" aria-hidden="true">
+          <!-- FOTO TEMPORAL — reemplazar -->
+          <img data-foto="conoce-nutricion" loading="lazy" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=70" alt="">
+        </span>
+      </div>
+      <div class="kinetic__row kinetic__row--alt" data-drift="1">
+        <span class="kinetic__pic media" aria-hidden="true">
+          <!-- FOTO TEMPORAL — reemplazar -->
+          <img data-foto="conoce-equipo" loading="lazy" src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=70" alt="">
+        </span>
+        <span class="kinetic__word">Equilibrio</span>
+        <span class="kinetic__shape shape shape--pill" aria-hidden="true"></span>
+      </div>
+      <div class="kinetic__row" data-drift="-1">
+        <span class="kinetic__word">Desempeño</span>
+        <span class="kinetic__shape shape shape--dome" aria-hidden="true"></span>
+        <span class="kinetic__pic media" aria-hidden="true">
+          <!-- FOTO TEMPORAL — reemplazar -->
+          <img data-foto="conoce-movimiento" loading="lazy" src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=900&q=70" alt="">
+        </span>
+      </div>
+    </div>
+
+    <div class="wrap about__foot" data-slide="right">
+      <a class="btn-roll btn-roll--navy" href="#servicios">
+        <span class="btn-roll__text">Ver servicios</span>
+        <span class="btn-roll__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       3 · SERVICIOS
+       Desktop: columna izquierda fija con la imagen que cambia según el
+       servicio activo. Tablet: cuadrícula de tarjetas. Celular: tarjetas
+       apiladas. El acordeón de cada servicio se conserva.
+       ===================================================================== -->
+  <section class="services sheet sheet--navy" id="servicios" data-theme="dark" aria-labelledby="serviciosTitle">
+    <span class="float-shape shape shape--pill" data-float="-60" aria-hidden="true"></span>
+    <div class="wrap services__grid">
+
+      <div class="services__aside">
+        <div class="services__sticky">
+          <div class="section-head">
+            <p class="eyebrow eyebrow--light" data-slide="left">Lo que hacemos</p>
+            <h2 class="section-title section-title--light" id="serviciosTitle" data-split data-slide="left">Servicios</h2>
+          </div>
+          <!-- Solo desktop: visor de imágenes sincronizado con el scroll -->
+          <div class="services__viewer" aria-hidden="true">
+            <figure class="services__frame media is-active" data-frame="0"><img data-foto="servicio-01" loading="lazy" src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=70" alt=""></figure>
+            <figure class="services__frame media" data-frame="1"><img data-foto="servicio-02" loading="lazy" src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1200&q=70" alt=""></figure>
+            <figure class="services__frame media" data-frame="2"><img data-foto="servicio-03" loading="lazy" src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=1200&q=70" alt=""></figure>
+            <figure class="services__frame media" data-frame="3"><img data-foto="servicio-04" loading="lazy" src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1200&q=70" alt=""></figure>
+            <figure class="services__frame media" data-frame="4"><img data-foto="servicio-05" loading="lazy" src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=1200&q=70" alt=""></figure>
+            <span class="services__counter"><b id="serviceNow">01</b> / 05</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="services__list" id="servicesList">
+        <article class="service" data-service="0">
+          <figure class="service__pic media"><img data-foto="servicio-01" loading="lazy" src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=70" alt="Actividad corporativa al aire libre"></figure>
+          <div class="service__body">
+            <span class="service__index">01</span>
+            <h3 class="service__title">Actividades corporativas</h3>
+            <button class="service__toggle" type="button" aria-expanded="false" aria-controls="sv1">
+              <span>Ver información</span><i aria-hidden="true"></i>
+            </button>
+            <div class="service__panel" id="sv1"><div class="service__panel-in"><p class="ph">[Información del servicio]</p></div></div>
+          </div>
+        </article>
+        <article class="service" data-service="1">
+          <figure class="service__pic media"><img data-foto="servicio-02" loading="lazy" src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1200&q=70" alt="Equipo compartiendo una dinámica de grupo"></figure>
+          <div class="service__body">
+            <span class="service__index">02</span>
+            <h3 class="service__title">Team Building</h3>
+            <button class="service__toggle" type="button" aria-expanded="false" aria-controls="sv2">
+              <span>Ver información</span><i aria-hidden="true"></i>
+            </button>
+            <div class="service__panel" id="sv2"><div class="service__panel-in"><p class="ph">[Información del servicio]</p></div></div>
+          </div>
+        </article>
+        <article class="service" data-service="2">
+          <figure class="service__pic media"><img data-foto="servicio-03" loading="lazy" src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=1200&q=70" alt="Espacio de entrenamiento corporativo"></figure>
+          <div class="service__body">
+            <span class="service__index">03</span>
+            <h3 class="service__title">Administración y gestión de gimnasios corporativos</h3>
+            <button class="service__toggle" type="button" aria-expanded="false" aria-controls="sv3">
+              <span>Ver información</span><i aria-hidden="true"></i>
+            </button>
+            <div class="service__panel" id="sv3"><div class="service__panel-in"><p class="ph">[Información del servicio]</p></div></div>
+          </div>
+        </article>
+        <article class="service" data-service="3">
+          <figure class="service__pic media"><img data-foto="servicio-04" loading="lazy" src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1200&q=70" alt="Clase grupal de movimiento"></figure>
+          <div class="service__body">
+            <span class="service__index">04</span>
+            <h3 class="service__title">Clases grupales</h3>
+            <button class="service__toggle" type="button" aria-expanded="false" aria-controls="sv4">
+              <span>Ver información</span><i aria-hidden="true"></i>
+            </button>
+            <div class="service__panel" id="sv4"><div class="service__panel-in"><p class="ph">[Información del servicio]</p></div></div>
+          </div>
+        </article>
+        <article class="service" data-service="4">
+          <figure class="service__pic media"><img data-foto="servicio-05" loading="lazy" src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=1200&q=70" alt="Charla frente a un grupo"></figure>
+          <div class="service__body">
+            <span class="service__index">05</span>
+            <h3 class="service__title">Charlas personalizadas</h3>
+            <button class="service__toggle" type="button" aria-expanded="false" aria-controls="sv5">
+              <span>Ver información</span><i aria-hidden="true"></i>
+            </button>
+            <div class="service__panel" id="sv5"><div class="service__panel-in"><p class="ph">[Información del servicio]</p></div></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       4 · EXPERIENCIAS — Kórpo en acción
+       Desktop: la sección se fija y la galería avanza en horizontal con el
+       scroll. Tablet / celular: carrusel táctil nativo (swipe) con
+       flechas o indicadores.
+       ===================================================================== -->
+  <section class="exp sheet sheet--cream" id="experiencias" data-theme="light" aria-labelledby="expTitle">
+    <div class="exp__pin" id="expPin">
+      <div class="exp__rail" id="expRail">
+
+        <div class="exp__intro">
+          <p class="eyebrow" data-slide="left">Kórpo en acción</p>
+          <h2 class="section-title" id="expTitle" data-split data-slide="left">Conoce nuestras experiencias</h2>
+          <p class="section-lede" data-slide="right">Momentos de bienestar corporativo, capturados donde suceden: dentro de las empresas.</p>
+          <div class="exp__controls" aria-label="Controles de la galería">
+            <button class="round-btn" type="button" id="expPrev" aria-label="Experiencia anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+            <button class="round-btn" type="button" id="expNext" aria-label="Experiencia siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+          </div>
+        </div>
+
+        <div class="exp__track" id="expTrack">
+        <figure class="exp__card exp__card--a">
+          <div class="exp__img media"><img data-foto="experiencia-01" loading="lazy" src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1400&q=70" alt="Capacitación con un grupo de colaboradores"></div>
+          <figcaption><span>01</span><span class="ph">[Descripción de la experiencia]</span></figcaption>
+        </figure>
+        <figure class="exp__card exp__card--b">
+          <div class="exp__img media"><img data-foto="experiencia-02" loading="lazy" src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1400&q=70" alt="Alimentación saludable"></div>
+          <figcaption><span>02</span><span class="ph">[Descripción de la experiencia]</span></figcaption>
+        </figure>
+        <figure class="exp__card exp__card--c">
+          <div class="exp__img media"><img data-foto="experiencia-03" loading="lazy" src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1400&q=70" alt="Momento de pausa y respiración"></div>
+          <figcaption><span>03</span><span class="ph">[Descripción de la experiencia]</span></figcaption>
+        </figure>
+        <figure class="exp__card exp__card--d">
+          <div class="exp__img media"><img data-foto="experiencia-04" loading="lazy" src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1400&q=70" alt="Equipo de trabajo reunido en la oficina"></div>
+          <figcaption><span>04</span><span class="ph">[Descripción de la experiencia]</span></figcaption>
+        </figure>
+        </div>
+
+      </div>
+      <div class="exp__progress" aria-hidden="true">
+        <span class="exp__count"><b id="expNow">01</b> / 04</span>
+        <span class="exp__bar"><i id="expBar"></i></span>
+      </div>
+      <div class="exp__dots" id="expDots" aria-hidden="true"><i class="is-active"></i><i></i><i></i><i></i></div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       5 · PLANES PARA TU EMPRESA
+       Desktop: tarjetas que se apilan mientras el texto queda fijo.
+       Tablet: cuadrícula 2×2. Celular: pila "sticky" nativa.
+       ===================================================================== -->
+  <section class="plans sheet sheet--navy" id="planes" data-theme="dark" aria-labelledby="planesTitle">
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" id="marquee">
+        <span>Wellness corporativo para equipos que quieran rendir mejor</span><svg viewBox="0 0 74 106"><use href="#k-icon"/></svg>
+        <span>Kórpo</span><svg viewBox="0 0 74 106"><use href="#k-icon"/></svg>
+        <span>Wellness corporativo para equipos que quieran rendir mejor</span><svg viewBox="0 0 74 106"><use href="#k-icon"/></svg>
+        <span>Kórpo</span><svg viewBox="0 0 74 106"><use href="#k-icon"/></svg>
+      </div>
+    </div>
+
+    <span class="float-shape float-shape--yellow shape shape--dot" data-float="80" aria-hidden="true"></span>
+
+    <div class="wrap plans__grid">
+      <div class="plans__intro">
+        <div class="plans__sticky">
+          <p class="eyebrow eyebrow--light" data-slide="left">Planes para tu empresa</p>
+          <h2 class="section-title section-title--light" id="planesTitle" data-split data-slide="left">Planes hechos para tu empresa</h2>
+          <p class="section-lede section-lede--light" data-slide="right">Cada organización es diferente. Diseñamos paquetes, eventos y planes mensuales personalizados según las necesidades de tu equipo — nos desplazamos hasta tu empresa para hacerlo posible.</p>
+          <p class="note" data-slide="left">Aún no tenemos los planes definitivos — así es como se vería esta sección una vez definidos.</p>
+          <a class="btn-roll btn-roll--green" href="#contacto" data-slide="right">
+            <span class="btn-roll__text">Solicitar propuesta</span>
+            <span class="btn-roll__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="plans__stack" id="plansStack">
+        <!-- Plantilla: sustituir nombre, descripción, "qué incluye", duración y
+             (si se decide mostrarlo) precio, sin tocar el marcado. -->
+        <article class="plan plan--green" style="--i:0">
+          <div class="plan__top"><span class="plan__index">PLAN 01</span><span class="plan__mark shape shape--dot" aria-hidden="true"></span></div>
+          <h3 class="plan__name ph">[Nombre del plan]</h3>
+          <p class="plan__desc ph">[Descripción del plan]</p>
+          <ul class="plan__list"><li class="ph">[Qué incluye]</li><li class="ph">[Qué incluye]</li></ul>
+          <div class="plan__meta"><span class="ph">[Duración]</span><span class="ph">[Precio — opcional]</span></div>
+          <a class="btn-roll btn-roll--plan" href="#contacto"><span class="btn-roll__text">Solicitar propuesta</span><span class="btn-roll__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span></a>
+        </article>
+        <article class="plan plan--coral" style="--i:1">
+          <div class="plan__top"><span class="plan__index">PLAN 02</span><span class="plan__mark shape shape--pill" aria-hidden="true"></span></div>
+          <h3 class="plan__name ph">[Nombre del plan]</h3>
+          <p class="plan__desc ph">[Descripción del plan]</p>
+          <ul class="plan__list"><li class="ph">[Qué incluye]</li><li class="ph">[Qué incluye]</li></ul>
+          <div class="plan__meta"><span class="ph">[Duración]</span><span class="ph">[Precio — opcional]</span></div>
+          <a class="btn-roll btn-roll--plan" href="#contacto"><span class="btn-roll__text">Solicitar propuesta</span><span class="btn-roll__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span></a>
+        </article>
+        <article class="plan plan--yellow" style="--i:2">
+          <div class="plan__top"><span class="plan__index">PLAN 03</span><span class="plan__mark shape shape--dot" aria-hidden="true"></span></div>
+          <h3 class="plan__name ph">[Nombre del plan]</h3>
+          <p class="plan__desc ph">[Descripción del plan]</p>
+          <ul class="plan__list"><li class="ph">[Qué incluye]</li><li class="ph">[Qué incluye]</li></ul>
+          <div class="plan__meta"><span class="ph">[Duración]</span><span class="ph">[Precio — opcional]</span></div>
+          <a class="btn-roll btn-roll--plan" href="#contacto"><span class="btn-roll__text">Solicitar propuesta</span><span class="btn-roll__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span></a>
+        </article>
+        <article class="plan plan--cream" style="--i:3">
+          <div class="plan__top"><span class="plan__index">PLAN 04</span><span class="plan__mark shape shape--dome" aria-hidden="true"></span></div>
+          <h3 class="plan__name ph">[Nombre del plan]</h3>
+          <p class="plan__desc ph">[Descripción del plan]</p>
+          <ul class="plan__list"><li class="ph">[Qué incluye]</li><li class="ph">[Qué incluye]</li></ul>
+          <div class="plan__meta"><span class="ph">[Duración]</span><span class="ph">[Precio — opcional]</span></div>
+          <a class="btn-roll btn-roll--plan" href="#contacto"><span class="btn-roll__text">Solicitar propuesta</span><span class="btn-roll__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       6 · EQUIPO
+       Desktop: 3 columnas con desplazamiento escalonado. Tablet: 2 + 1
+       horizontal. Celular: carrusel táctil.
+       ===================================================================== -->
+  <section class="team sheet sheet--cream" id="equipo" data-theme="light" aria-labelledby="equipoTitle">
+    <div class="wrap">
+      <div class="section-head section-head--split">
+        <div>
+          <p class="eyebrow" data-slide="left">Equipo</p>
+          <h2 class="section-title" id="equipoTitle" data-split data-slide="left">Nuestro equipo</h2>
+        </div>
+        <p class="section-lede" data-slide="right">Personas que hacen del bienestar una experiencia.</p>
+      </div>
+
+      <div class="team__grid">
+        <article class="coach" data-parallax="0">
+          <div class="coach__photo media"><img data-foto="coach-01" loading="lazy" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=900&q=70" alt="Fotografía placeholder coach 1"></div>
+          <div class="coach__info">
+            <h3 class="coach__name ph">[COACH 01]</h3>
+            <p class="coach__role ph">[ESPECIALIDAD]</p>
+            <p class="coach__bio ph">[DESCRIPCIÓN — placeholder]</p>
+          </div>
+        </article>
+        <article class="coach" data-parallax="1">
+          <div class="coach__photo media"><img data-foto="coach-02" loading="lazy" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=70" alt="Fotografía placeholder coach 2"></div>
+          <div class="coach__info">
+            <h3 class="coach__name ph">[COACH 02]</h3>
+            <p class="coach__role ph">[ESPECIALIDAD]</p>
+            <p class="coach__bio ph">[DESCRIPCIÓN — placeholder]</p>
+          </div>
+        </article>
+        <article class="coach" data-parallax="0">
+          <div class="coach__photo media"><img data-foto="coach-03" loading="lazy" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=70" alt="Fotografía placeholder coach 3"></div>
+          <div class="coach__info">
+            <h3 class="coach__name ph">[COACH 03]</h3>
+            <p class="coach__role ph">[ESPECIALIDAD]</p>
+            <p class="coach__bio ph">[DESCRIPCIÓN — placeholder]</p>
+          </div>
+        </article>
+      </div>
+      <div class="team__dots" id="teamDots" aria-hidden="true"><i class="is-active"></i><i></i><i></i></div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       7 · CONTACTO + FOOTER
+       ===================================================================== -->
+  <section class="contact sheet sheet--deep" id="contacto" data-theme="dark" aria-labelledby="contactoTitle">
+    <div class="contact__bg media" aria-hidden="true">
+      <!-- FOTO TEMPORAL — reemplazar -->
+      <img data-foto="contacto" loading="lazy" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1800&q=60" alt="">
+    </div>
+
+    <div class="wrap contact__inner">
+      <p class="eyebrow eyebrow--light" data-slide="left">Contacto</p>
+      <h2 class="contact__title" id="contactoTitle" data-chars>Conectemos.</h2>
+      <p class="contact__lede" data-slide="right">Hagamos que el bienestar también forme parte de tu empresa.</p>
+
+      <!-- Enlaces reales pendientes: sustituir cada href="#" por el enlace
+           definitivo (Instagram, wa.me/..., mailto:...). -->
+      <div class="contact__grid">
+        <a class="contact-card" href="#" data-contact="instagram">
+          <span class="contact-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></span>
+          <span class="contact-card__label">Instagram</span>
+          <span class="contact-card__hint ph">[enlace pendiente]</span>
+          <span class="contact-card__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
+        </a>
+        <a class="contact-card" href="#" data-contact="whatsapp">
+          <span class="contact-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21z"/><path d="M9 10a.5.5 0 0 0 1 0v-1a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg></span>
+          <span class="contact-card__label">WhatsApp</span>
+          <span class="contact-card__hint ph">[enlace pendiente]</span>
+          <span class="contact-card__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
+        </a>
+        <a class="contact-card" href="#" data-contact="email">
+          <span class="contact-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg></span>
+          <span class="contact-card__label">Correo</span>
+          <span class="contact-card__hint ph">[dirección pendiente]</span>
+          <span class="contact-card__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
+        </a>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="wrap footer__row">
+        <nav class="footer__links" aria-label="Pie de página">
+          <a href="#conoce">Kórpo</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#experiencias">Experiencias</a>
+          <a href="#planes">Planes</a>
+          <a href="#equipo">Equipo</a>
+        </nav>
+        <a class="footer__top" href="#inicio">Volver arriba <span aria-hidden="true">↑</span></a>
+      </div>
+      <div class="footer__word" aria-hidden="true">
+        <svg viewBox="0 0 438 150"><use href="#k-word"/></svg>
+      </div>
+      <div class="wrap footer__legal">
+        <span>© <span id="year">2026</span> Kórpo</span>
+        <span>Wellness corporativo para equipos que quieran rendir mejor.</span>
+      </div>
+    </footer>
+  </section>
+
+</main>
+
+<!-- GSAP + ScrollTrigger (animaciones de scroll) y Lenis (scroll suave, solo desktop).
+     Si no cargan, el sitio funciona igual sin animaciones. -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js" defer></script>
+<script src="script-2.js" defer></script>
+</body>
+</html>
