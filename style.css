@@ -991,8 +991,9 @@ mark{ background:none; color:inherit; }
     will-change: transform;
   }
   .motion .exp__intro{ flex:none; width: min(34vw, 540px); padding: 0 0 0 var(--gutter); max-width:none; }
-  /* Título más compacto: "experiencias" cabe completo en su columna */
-  .motion .exp__intro .section-title{ font-size: clamp(40px, 4.6vw, 84px); }
+  /* Título calculado según el ancho real de la columna (máx. 540px):
+     "experiencias" cabe completo en cualquier ancho de pantalla */
+  .motion .exp__intro .section-title{ font-size: clamp(40px, calc((min(34vw, 540px) - var(--gutter)) / 6.4), 84px); }
   .motion .exp__track{
     display:flex;
     align-items:center;
