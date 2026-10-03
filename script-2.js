@@ -552,8 +552,8 @@
         });
       }
 
-      /* ---------- 4 · EXPERIENCIAS ---------- */
-      if (desktop) {
+      /* ---------- 4 · EXPERIENCIAS (galería horizontal fija en todas las pantallas) ---------- */
+      {
         const pin = $("#expPin");
         const rail = $("#expRail");
         const distance = () => Math.max(0, rail.scrollWidth - window.innerWidth);
@@ -569,13 +569,21 @@
             start: "top top",
             end: () => "+=" + distance(),
             pin: true,
-            scrub: true,
+            scrub: desktop ? true : touchScrub,
             anticipatePin: 1,
             refreshPriority: 1,
             invalidateOnRefresh: true,
             onUpdate: (self) => {
               bar.style.transform = `scaleX(${self.progress})`;
-              now.textContent = String(Math.min(cards.length, Math.floor(self.progress * cards.length) + 1)).padStart(2, "0");
+              // Número de la foto más cercana al centro de la pantalla
+              const mid = window.innerWidth / 2;
+              let best = 0, bestDist = Infinity;
+              cards.forEach((c, k) => {
+                const r = c.getBoundingClientRect();
+                const d = Math.abs(r.left + r.width / 2 - mid);
+                if (d < bestDist) { bestDist = d; best = k; }
+              });
+              now.textContent = String(best + 1).padStart(2, "0");
             },
           },
         });
@@ -597,15 +605,6 @@
             autoAlpha: 0, y: 20, ease: "none",
             scrollTrigger: { trigger: card, containerAnimation: railTween, start: "left 75%", end: "left 50%", scrub: true },
           });
-        });
-      } else {
-        gsap.from(".exp__card", {
-          x: 80,
-          autoAlpha: 0,
-          duration: 1.1,
-          ease: "expo.out",
-          stagger: 0.1,
-          scrollTrigger: { trigger: "#expTrack", start: "top 85%", once: true },
         });
       }
 

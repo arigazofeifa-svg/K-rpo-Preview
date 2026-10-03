@@ -968,9 +968,10 @@ mark{ background:none; color:inherit; }
 }
 
 /* ================================================================
-   DESKTOP ≥ 1024px — galería horizontal fija (solo con animación)
+   EXPERIENCIAS — galería horizontal fija (solo con animación).
+   Base = desktop; tablet y celular ajustan tamaños más abajo.
    ================================================================ */
-@media (min-width:1024px){
+@media all{
   .motion .exp{ padding: 0; }
   .motion .exp__pin{
     height: 100svh;
@@ -990,6 +991,8 @@ mark{ background:none; color:inherit; }
     will-change: transform;
   }
   .motion .exp__intro{ flex:none; width: min(34vw, 540px); padding: 0 0 0 var(--gutter); max-width:none; }
+  /* Título más compacto: "experiencias" cabe completo en su columna */
+  .motion .exp__intro .section-title{ font-size: clamp(40px, 4.6vw, 84px); }
   .motion .exp__track{
     display:flex;
     align-items:center;
@@ -1208,3 +1211,38 @@ mark{ background:none; color:inherit; }
 /* Placeholders de foto: sin etiqueta en imágenes pequeñas o de fondo */
 .contact__bg.is-missing::after,
 .kinetic__pic.is-missing::after{ display:none; }
+
+/* Experiencias en tablet y celular: misma galería horizontal fija que en desktop */
+@media (max-width:1023px){
+  .motion .exp__rail{ gap: 6vw; padding-right: var(--gutter); }
+  .motion .exp__intro{ width: min(56vw, 460px); }
+  .motion .exp__intro .section-title{ font-size: clamp(44px, 7vw, 64px); }
+  .motion .exp__track{ gap: 5vw; height: auto; }
+  .motion .exp__card--a{ width: 52vw; }
+  .motion .exp__card--a .exp__img{ height: 52svh; }
+  .motion .exp__card--b{ width: 40vw; }
+  .motion .exp__card--b .exp__img{ height: 40svh; }
+  .motion .exp__card--c{ width: 46vw; }
+  .motion .exp__card--c .exp__img{ height: 46svh; }
+  .motion .exp__card--d{ width: 54vw; }
+  .motion .exp__card--d .exp__img{ height: 50svh; }
+  .motion .exp__img{ border-radius: 22px; }
+  .motion .exp__card figcaption{ font-size: 13px; margin-top: 10px; }
+  .motion .exp__dots{ display:none; }
+  .motion .exp__progress{ bottom: 24px; }
+}
+@media (max-width:639px){
+  .motion .exp__rail{ gap: 8vw; }
+  .motion .exp__intro{ width: 80vw; }
+  .motion .exp__intro .section-title{ font-size: clamp(36px, 11vw, 52px); }
+  .motion .exp__track{ gap: 7vw; }
+  .motion .exp__card--a{ width: 74vw; }
+  .motion .exp__card--a .exp__img{ height: 50svh; }
+  .motion .exp__card--b{ width: 62vw; }
+  .motion .exp__card--b .exp__img{ height: 40svh; }
+  .motion .exp__card--c{ width: 68vw; }
+  .motion .exp__card--c .exp__img{ height: 46svh; }
+  .motion .exp__card--d{ width: 76vw; }
+  .motion .exp__card--d .exp__img{ height: 48svh; }
+  .motion .exp__progress{ bottom: max(20px, env(safe-area-inset-bottom)); }
+}
